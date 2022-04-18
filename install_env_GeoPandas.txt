@@ -1,0 +1,20 @@
+
+conda create -n env_a
+conda activate env_a
+conda config --env --add channels conda-forge
+conda config --env --set channel_priority strict
+conda install python=3 geopandas
+
+pip install geobr
+pip install notebook
+pip install jupyterlab
+pip install descartes
+pip install tqdm
+pip install seaborn
+pip install yellowbrick
+
+
+opcional:
+conda update --all
+conda env remove -n env_2
+
